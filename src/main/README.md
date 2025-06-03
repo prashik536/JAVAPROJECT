@@ -53,7 +53,7 @@ Open: [http://localhost:8080](http://localhost:8080)
 
 To use a different port, set it in `application.properties`:
 ```properties
-server.port=9090
+server.port=8080
 ```
 
 ---
@@ -95,45 +95,6 @@ minikube service java-demo-service
 For LoadBalancer:
 ```bash
 kubectl get service java-demo-service
-```
-
----
-
-## 🎨 HTML Page Preview
-
-Located at: `src/main/resources/templates/index.html`
-
-```html
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-  <title>Hello Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #6dd5fa, #2980b9);
-      color: white;
-      text-align: center;
-      padding-top: 100px;
-    }
-    .container {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 40px;
-      border-radius: 12px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1 th:text="${message}">Hello from Spring Boot!</h1>
-    <p>Deployed via Docker & Kubernetes.</p>
-  </div>
-</body>
-</html>
 ```
 
 ---
