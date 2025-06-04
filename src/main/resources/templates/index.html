@@ -6,27 +6,31 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #6dd5fa, #2980b9);
-      color: white;
+      background: linear-gradient(to right, #ff6a00, #ee0979); /* Changed gradient */
+      color: #fff;
       text-align: center;
       padding-top: 100px;
     }
     .container {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.2); /* Slightly brighter */
       padding: 40px;
       border-radius: 12px;
       display: inline-block;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
     h1 {
       font-size: 2.5em;
+      color: #ffe; /* Light yellowish for better contrast */
+    }
+    p {
+      color: #f9f9f9;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1 th:text="${message}">Hello Default</h1>
-    <p>Welcome to the Spring Boot app running in Docker and Kubernetes!</p>
+    <h1 th:text="${message}">Hello V2</h1>
+    <p>Welcome to the Spring Boot app running in Docker and Kubernetes!:V2</p>
   </div>
 </body>
 </html>
-
