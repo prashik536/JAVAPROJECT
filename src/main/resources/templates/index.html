@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
   <title>Hello Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #8e2de2, #4a00e0); /* Purple gradient */
+      background: linear-gradient(to right, #56ab2f, #a8e063); /* green gradient */
       color: white;
       text-align: center;
       padding-top: 100px;
     }
     .container {
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.1);
       padding: 40px;
       border-radius: 12px;
       display: inline-block;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
     h1 {
       font-size: 2.5em;
-      color: #f3e5ff; /* Light lavender */
-    }
-    p {
-      color: #f8f8ff;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1 th:text="${message}">Hello V1</h1>
-    <p>Welcome to the Spring Boot app running in Docker and Kubernetes!: V1</p>
+    <h1 th:text="${message}">Hello from Spring Boot!</h1>
+    <p>Welcome to the Spring Boot app running in Docker and Kubernetes!:v2</p>
   </div>
 </body>
 </html>
