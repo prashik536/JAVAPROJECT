@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  java-app-1:
+    image: prashik536/kubernets:v2
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
+
+  java-app-2:
+    image: prashik536/kubernets:v1
+    ports:
+      - "8082:8080"
+    restart: unless-stopped
+
+  java-app-3:
+    image: prashik536/kubernets:v2
+    ports:
+      - "8083:8080"
+    restart: unless-stopped
+
+  java-app-4:
+    image: nginx
+    ports:
+      - "8084:80"
+    restart: unless-stopped
+
